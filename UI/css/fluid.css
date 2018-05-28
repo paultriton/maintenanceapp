@@ -1,0 +1,32 @@
+@media all and (max-width: 800px) {
+  body {
+    margin:0 0;
+    overflow-x: hidden;
+  }
+}
+
+
+@media all and (max-width: 800px) {
+  .nav-bar {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+}
+
+
+@media all and (max-width: 800px) {
+  .filter-bar {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .filter-bar {
+    flex-direction: column;
+  }
+}
