@@ -23,10 +23,10 @@ function validateSigninForm(){
 	}
 
 	if (email == "admin@mainapp.com" && password == "admin") {
-		window.location = "../UI/admin.html";
+		window.location = "../UI/templates/admin.html";
 	}
 	else if (email == "user@mainapp.com" && password == "user") {
-		window.location = "../UI/user.html";
+		window.location = "../UI/templates/user.html";
 	}
 	else{
 		alert("Login failed");
