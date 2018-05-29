@@ -1,6 +1,3 @@
-
-
-
 //Implement form validation
 
 function validateSigninForm(){
@@ -23,16 +20,15 @@ function validateSigninForm(){
 	}
 
 	if (email == "admin@mainapp.com" && password == "admin") {
-		window.location = "../UI/templates/admin.html";
+		window.location = "/UI/templates/admin.html";
 	}
 	else if (email == "user@mainapp.com" && password == "user") {
-		window.location = "../UI/templates/user.html";
+		window.location = "/UI/templates/user.html";
 	}
 	else{
 		alert("Login failed");
 		return false;
 	}
-
 	return false;
 }
 
@@ -60,7 +56,7 @@ function validateSignupForm(){
 		passwordError.innerHTML="password field cannot be empty";
 		return false;
 	}
-	window.location = "../UI/index.html";
+	window.location = "/UI/templates/index.html";
 }
 
 
