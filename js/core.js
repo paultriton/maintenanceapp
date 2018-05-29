@@ -11,4 +11,6 @@ function openDetails(id) {
 		toggler.innerHTML = "more details";
 	}		
 }
+
+
 	

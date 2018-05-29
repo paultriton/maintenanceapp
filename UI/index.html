@@ -13,8 +13,6 @@
  		<!-- nav-bar -->
  		<nav class="nav-bar">
 		  <a href="#">Home</a>
-		  <a href="admin.html">Admin</a>
-		  <a href="user.html">User</a>
 		  <a href="signup.html">Sign up</a>
 		</nav>
 		<!-- /nav-bar-->
@@ -25,15 +23,15 @@
 			<div class="login-form">
 				<h2 class="main-color">Login Here!</h2>
 				<!-- form section-->
-				<form method="post">
+				<form method="post" onsubmit="validateSigninForm(); return false;">
 					<div class="form-detail">
 						<label>Email</label>
-						<input type="email" class="form-text" id="emailField" name="email" required>
+						<input type="email" class="form-text" id="emailField" name="email">
 						<p id="emailError"></p>
 					</div>
 					<div class="form-detail">
 						<label>Password</label>
-						<input type="password" class="form-text" id="passwordField" name="password" required>
+						<input type="password" class="form-text" id="passwordField" name="password">
 						<p id="passwordError"></p>
 					</div>
 					<div class="form-detail">
@@ -48,7 +46,7 @@
 			</div>
 		</div>
  	</div>
- 	<!-- footer starts here -->
+ 	<!-- footer-->
  	<footer>
 		<nav class="footer-bar bg-main">
 		  <div>
@@ -59,7 +57,7 @@
 		  </div>
 		</nav>
 	</footer>
-	<!-- footer ends here -->
+	<!-- /footer-->
 	<script type="text/javascript" src="../js/validation.js"></script>
  </body>
  </html>

@@ -14,8 +14,6 @@
  		<!--nav-bar-->
  		<nav class="nav-bar">
 		  <a href="index.html">Home</a>
-		  <a href="admin.html">Admin</a>
-		  <a href="user.html">User</a>
 		  <a href="index.html">Sign In</a>
 		</nav>
 		<!--/nav-bar-->
@@ -26,7 +24,7 @@
 			<!-- login form-->
 			<div class="login-form">
 				<h2 class="main-color">Signup Here!</h2>
-				<form id="signUpForm" onsubmit=" return validateForm(e)">
+				<form id="signUpForm" onsubmit="validateSignupForm(); return false;">
 					<div class="form-detail">
 						<label>Username</label>
 						<input type="text" class="form-text" name="text" id="userNameField">
