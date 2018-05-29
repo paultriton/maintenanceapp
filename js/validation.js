@@ -20,10 +20,10 @@ function validateSigninForm(){
 	}
 
 	if (email == "admin@mainapp.com" && password == "admin") {
-		window.location = "/UI/templates/admin.html";
+		window.location = "/maintenanceapp/UI/templates/admin.html";
 	}
 	else if (email == "user@mainapp.com" && password == "user") {
-		window.location = "/UI/templates/user.html";
+		window.location = "/maintenanceapp/UI/templates/user.html";
 	}
 	else{
 		alert("Login failed");
@@ -56,7 +56,7 @@ function validateSignupForm(){
 		passwordError.innerHTML="password field cannot be empty";
 		return false;
 	}
-	window.location = "/UI/templates/index.html";
+	window.location = "/maintenanceapp/UI/templates/index.html";
 }
 
 
