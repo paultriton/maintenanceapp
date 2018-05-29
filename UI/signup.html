@@ -23,21 +23,24 @@
 		<div class="content">
 			<div class="login-form">
 				<h2 class="main-color">Signup Here!</h2>
-				<form>
+				<form id="signUpForm" onsubmit=" return validateForm(e)">
 					<div class="form-detail">
 						<label>Username</label>
-						<input type="text" class="form-text" name="text">
+						<input type="text" class="form-text" name="text" id="userNameField">
+						<p id="userNameError"></p>
 					</div>
 					<div class="form-detail">
 						<label>Email</label>
-						<input type="email" class="form-text" name="email">
+						<input type="email" class="form-text" id="emailField" name="email">
+						<p id="emailError"></p>
 					</div>
 					<div class="form-detail">
 						<label>Password</label>
-						<input type="password" class="form-text" name="password">
+						<input type="password" class="form-text" id="passwordField" name="password" >
+						<p id="passwordError"></p>
 					</div>
 					<div class="form-detail">
-						<button type="submit" name="signup" class="form-btn">Signup</button>
+						<button type="submit" name="signup" class="form-btn" id="signUpBtn">Signup</button>
 					</div>
 					<div class="form-detail">
 						<p> Have an account <a href="index.html">SignIn</a></p>
@@ -56,5 +59,6 @@
 		  </div>
 		</nav>
 	</footer>
+	<script type="text/javascript" src="../js/validation.js"></script>
  </body>
  </html>

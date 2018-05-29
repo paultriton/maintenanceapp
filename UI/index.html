@@ -22,14 +22,16 @@
 		<div class="content">
 			<div class="login-form">
 				<h2 class="main-color">Login Here!</h2>
-				<form>
+				<form method="post">
 					<div class="form-detail">
 						<label>Email</label>
-						<input type="email" class="form-text" name="email">
+						<input type="email" class="form-text" id="emailField" name="email" required>
+						<p id="emailError"></p>
 					</div>
 					<div class="form-detail">
 						<label>Password</label>
-						<input type="password" class="form-text" name="password">
+						<input type="password" class="form-text" id="passwordField" name="password" required>
+						<p id="passwordError"></p>
 					</div>
 					<div class="form-detail">
 						<button type="submit" name="login" class="form-btn">Login</button>
@@ -52,5 +54,6 @@
 		  </div>
 		</nav>
 	</footer>
+	<script type="text/javascript" src="../js/validation.js"></script>
  </body>
  </html>
