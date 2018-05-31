@@ -1,4 +1,3 @@
-"""test_get.py"""
 """tests_app.py"""
 import unittest
 import json
