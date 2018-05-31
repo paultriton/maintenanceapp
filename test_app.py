@@ -14,7 +14,7 @@ class FlaskTestCase(unittest.TestCase):
 
         response = test_client.put(
             '/api/v1/users/requests/93',
-            data=json.dumps({"request":"helo"}), content_type="application/json"
+            data=json.dumps({"request":"hello"}), content_type="application/json"
         )
 
         self.assertEqual(response.status_code, 200)
